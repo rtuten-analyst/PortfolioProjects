@@ -1,0 +1,249 @@
+
+header {
+		background-color: #77BFFE;
+}
+
+nav {
+	
+	border-radius:  3em;
+	border-color:  white;
+	display:  inline-block;
+
+
+
+}
+
+
+.menu{
+
+	background-color:  #77BFFE;
+	table-layout:  fixed;
+	vertical-align:  middle;
+
+
+
+}
+.menu td{
+		
+	table-layout:  fixed;	
+	border-style:  solid;		
+	border-spacing:  500px;
+	border-color:  green;
+	background-color:  #7BFF7C;
+	
+	border-top-left-radius:  100%;
+	border-bottom-right-radius:  100%;
+
+	border-bottom-left-radius:  ;
+	border-top-right-radius:  ;
+	
+	width:  325px;
+
+	/*
+	border-top-right-radius:  3em;
+	border-bottom-right-radius: 3em;
+	border-top-left-radius:  -3em;
+	border-bottom-left-radius:  -3em;*/
+
+	b
+}
+
+.menu th{
+	background-color:  #77BFFE;
+	border-radius:  3em;
+}
+/*
+
+.menu li{
+	display:  inline;
+	padding:  1em;
+	text-align:  center;
+	border-style:  solid;
+	border-color:  white;
+	border-radius:  50%;
+	border-width:  1em;
+	background-color:  white;
+
+}/*
+
+/* The example-picture depicted a BLUE background for the nav strip but the code didn't. So I added this */
+
+
+
+body {
+
+	background-image: url(assets/Grass.png);
+	background-repeat:  repeat-x;
+	background-position:  center bottom;
+	background-color: #77BFFE;
+}
+
+#container {
+	max-width: 960px; 
+	margin: 0 auto; 
+
+}
+
+#left {
+	float: left; 
+	width: 20%; 
+	background-color: black;
+}
+
+#main {
+	float: right; width: 80%; 
+	background-color: #C1FEDB;
+	text-align:  left; 
+	font-family: calibri, serif;
+	padding:  3em;
+	border-style: groove;
+
+}
+
+
+
+
+footer {
+	clear: both; 
+
+}
+
+.centertext {
+	text-align: center;
+}
+
+h1 {color:  white;
+	font-family:  "Goudy Old Style", Calibri, serif;
+	font-weight:  bold;
+	font-size:  2.5em;
+	border-bottom-style:  solid;
+
+
+
+	}
+
+p {
+	text-align: left;
+	font-family:  Candara, Calibri, serif;
+	font-weight:  400;
+
+	}
+
+
+/*Paragraph Labels */
+.plabel{
+	font-family:  "Goudy Old Style", Calibri, serif;
+	font-size: 1.25em;
+	font-weight:  600;
+	background-color: #00D864;
+	padding:  1em;
+	text-align:  center;
+}
+
+/*Lindblum Castle on Home Page */
+#castle{
+	float: right;
+	/* Going for 'poloroid photo' look
+	Use EM for relative size, this helps with 'responsive design' as it adapts. Pixels (px) are exact size and won't grow/shrink.
+	padding-top: 2em;
+	padding-right:  2em;
+	padding-bottom: 8em;
+	padding-left:  2em;
+	*/
+	padding:  2em 2em 8em 2em; /*This is short-hand for the listing above. Order is TOP RIGHT BOTTOM LEFT... Clockwise TRouBLe */
+	border-style:  ridge;
+	border-width:  medium;
+	border-color:  gray;
+	background-color: white;
+	border-radius:  3em;
+	margin:  1em;
+}
+
+#gallery{
+	padding:  1em 1em 4em 1em; /*This is short-hand for the listing above. Order is TOP RIGHT BOTTOM LEFT... Clockwise TRouBLe */
+	border-style:  ridge;
+	border-width:  medium;
+	border-color:  gray;
+	background-color: white;
+	border-radius:  3em;
+	margin:  1em;
+}
+
+#sh_logo{
+	float:  left;
+}
+
+
+/*I receive validation errors that I cannot use Duplicate ID names for this effect..? So made 1-6 for now */
+#gallery1{
+	padding:  1em 1em 4em 1em; /*This is short-hand for the listing above. Order is TOP RIGHT BOTTOM LEFT... Clockwise TRouBLe */
+	border-style:  ridge;
+	border-width:  medium;
+	border-color:  gray;
+	background-color: white;
+	border-radius:  3em;
+	margin:  1em;
+}
+#gallery2{
+	padding:  1em 1em 4em 1em; /*This is short-hand for the listing above. Order is TOP RIGHT BOTTOM LEFT... Clockwise TRouBLe */
+	border-style:  ridge;
+	border-width:  medium;
+	border-color:  gray;
+	background-color: white;
+	border-radius:  3em;
+	margin:  1em;
+}
+#gallery3{
+	padding:  1em 1em 4em 1em; /*This is short-hand for the listing above. Order is TOP RIGHT BOTTOM LEFT... Clockwise TRouBLe */
+	border-style:  ridge;
+	border-width:  medium;
+	border-color:  gray;
+	background-color: white;
+	border-radius:  3em;
+	margin:  1em;
+}
+#gallery4{
+	padding:  1em 1em 4em 1em; /*This is short-hand for the listing above. Order is TOP RIGHT BOTTOM LEFT... Clockwise TRouBLe */
+	border-style:  ridge;
+	border-width:  medium;
+	border-color:  gray;
+	background-color: white;
+	border-radius:  3em;
+	margin:  1em;
+}
+#gallery5{
+	padding:  1em 1em 4em 1em; /*This is short-hand for the listing above. Order is TOP RIGHT BOTTOM LEFT... Clockwise TRouBLe */
+	border-style:  ridge;
+	border-width:  medium;
+	border-color:  gray;
+	background-color: white;
+	border-radius:  3em;
+	margin:  1em;
+}
+#gallery6{
+	padding:  1em 1em 4em 1em; /*This is short-hand for the listing above. Order is TOP RIGHT BOTTOM LEFT... Clockwise TRouBLe */
+	border-style:  ridge;
+	border-width:  medium;
+	border-color:  gray;
+	background-color: white;
+	border-radius:  3em;
+	margin:  1em;
+}
+
+
+
+.form tr{padding:  1em;}
+.form td{padding:  .3em;
+	font-family:  Candara, Calibri, serif;
+
+
+	background-color: #00D864;
+
+	text-align:  left;
+}
+
+
+.form{
+	margin-left:  auto;
+	margin-right:  auto;
+}

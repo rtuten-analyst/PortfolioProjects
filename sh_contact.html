@@ -1,0 +1,248 @@
+<!Doctype html>
+	<html lang="en">
+		<head>
+			<title>Sapling Homes: Contact Page</title>
+			<link rel="stylesheet" type="text/css" href="stylesheet.css">
+			<meta charset="utf-8">
+			<!--Add your three meta tags below this line-->
+
+			<meta name="keywords" content="Appointment, FAQ, Locations, Address, Email, Phone, Number">
+			<meta name="description" content="We would love to hear from you! Contact us!">
+			<meta name="author" content="Robert Tuten">
+
+
+				<!-- jQuery-Validate plug-in files-->
+			<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+			<script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js"></script>
+				
+				<!-- The 'Ready' part instructs the browser to 'First make sure the document is 'ready'... meaning page fully loaded into the browser window before you process the jQuery code-->
+				<script>$(document).ready(function (){
+					$('#mailingList').validate({
+
+						rules:{
+							firstname:{required: true, minlength: 2, maxlength: 10},
+							lastname:{required: true, minlength: 2, maxlength: 10},
+							phonenumber:{required: true, minlength: 10, maxlength: 10},
+							email:{required: true, minlength: 4, maxlength: 30},
+							
+						},
+
+						messages:{
+							firstname:{required: "Sup? Enter your first name.", minlength: "Most names are at least 2 characters?"},
+							lastname:{required: "Yo! What is your last name?", minlength: "You sure about that?", maxlength:"Did your mama really name you like that?"},
+							phonenumber:{required: "Do you even have a phone, bro?.", minlength: "Bro. That doesn't look right.", maxlength: "Bro. That doesn't make sense."},
+							email:{required: "Enter a *real* address."},
+							
+						},
+						submitHandler: function(form)
+							{form.submit();},
+
+					});
+				});
+				</script>
+		</head>
+
+		<body>
+			<!--The top of the body element.-->
+
+			<div id="container" class="centertext">
+					<header>Sapling Homes: Contact Page
+						<h1>Looking for more information?</h1>
+
+
+					</header>
+					<!--<nav>This is the header element.</nav>-->
+					<nav>
+
+
+						<!--<table class="menu">
+							<tr>
+								<td id="menuitem"><a href= "sh_home.html">Home</a></td>
+								<td id="menuitem"><a href= "sh_floorplans.html">Floor Plans</a></td>
+								<td id="menuitem"><a href= "sh_amenities.html">Amenities</a></td>
+								<td id="menuitem"><a href= "sh_gallery.html">Gallery</a></td>
+								<td id="menuitem"><a href= "sh_contact.html">Contact</a></td>
+							</tr> -->
+
+						<table class="menu">
+							<tr>
+								<th><a href="assets/sh_thumbnail.png" target="_blank">
+							<img id="sh_logo" src="assets/sh_thumbnail_small.png" alt="Sapling Home's Thumbnail" style="width: 75px">
+						</a></th>
+								<td><a href= "sh_home.html">Home</a></td>
+								<td><a href= "sh_floorplans.html">Floor Plans</a></td>
+								<td><a href= "sh_amenities.html">Amenities</a></td>
+								<td><a href= "sh_gallery.html">Gallery</a></td>
+								<td><a href= "sh_contact.html">Contact</a></td>
+							</tr> 
+							</table>
+
+					</nav>
+					
+					<!--<div id="left">This is the div element with ID=left.-->
+					<div id="left">
+					</div>
+
+					<!--<div id="main">This is the div element with ID=main.-->
+					<div id="main">	
+
+						<!--****************************************************************-->
+						<p class="plabel">Locations</p>
+							<dl>
+								<dt>Ocean Avenue</dt>
+									<dd>1829 Trails End Road</dd>
+									<dd>Miami, FL 33140</dd>
+									<dd>(820) 444 - 0000</dd>
+
+								<dt>Summer Forest</dt>
+									<dd>4939 St. Brannigan Street</dd>
+									<dd>Los Angeles, CA</dd>
+									<dd>(560) 111 - 2929</dd>
+								
+								<dt>Isthmus of Avalon</dt>
+									<dd>3000 Sir Bedewyn's Cove</dd>
+									<dd>Ocala, FL</dd>
+									<dd>(812) 999 - 4848</dd>
+							</dl>
+							<hr>	
+						
+						<!--****************************************************************-->
+						<p class="plabel">Appointments</p>
+							
+							<!-- YouTube: Smashing Pumpkins - 1979 Music Video -->
+							<a href="https://www.youtube.com/watch?v=4aeETEoNfOg">Book an Appointment!</a>
+
+							<p>Office Hours: 9 AM to 5 PM on Weekdays; 12 PM to 4 PM on Weekends</p>
+							
+							<p>To book an appointment, just call one of these locations to speak to an agent.
+							<br>Simply mention that you're looking for a new home today!</p>
+							
+							<p>Alternatively, email us at SaplingHomes@living.com</p>
+							<hr>
+						
+						<!--****************************************************************-->
+						<p class="plabel">FAQ</p>
+							<p>Question: How large are these units?
+								<br>Answer: Each unit ranges from 800 to 1,200 square feet. Pocket dimensions are included within your lease to satisfy additional spacial needs.</p>
+							<p>Question: What is your pet policy?
+								<br>Answer: We are a pet-friendly community! Tenants are each restricted to ' 1 ' fire-breathing dragon under the net weight of 2,000 tons. We have a unicorn park, plenty of mushroom circles, blood-sodden lairs, and several other pet amenities!</p>
+							<p>Question: Are there any utility-caps? If so, what are they?
+								<br>Answer: Our homes are supplied through a magical contract from a multi-dimensional diety. Your utility caps are limitless at the price of 3 toenail clippings per unit of exceeding supply.</p>	
+
+
+							<hr>
+						<p class="plabel">Would you like to subscribe to our mailing list?</p>
+
+						<form id="mailingList" action="AddToMailList.php" method="post">
+							
+						<fieldset>
+							<legend>Subscriber Form</legend>
+
+						<table id="form">
+							
+								
+							<tr>
+								<td><label for="firstname">First Name</label></td>
+								<td><input type="text" name="firstname" id="firstname"></td>
+							</tr>
+
+							<tr>
+								<td><label for="lastname">Last Name</label></td>
+								<td><input type="text" name="lastname" id="lastname"></td>
+							</tr>
+
+							<tr>
+								<td><label for="phonenumber">Phone Number</label>
+								</td><td><input type="tel" name="phonenumber" id="phonenumber"></td>
+							</tr>
+
+							<tr>
+								<td><label for="email">Email</label></td>
+								<td><input type="email" name="email" id="email"></td>
+							</tr>
+
+							<tr>
+								<td><label for="date">Date</label></td>
+								<td><input type="date" name="date" id="date"></td>
+							</tr>
+
+							<tr>
+								<td>Marital Status</td>
+								<td>
+
+									
+									<input type="radio" id="single" name="marital" value="single">
+									<label for="single">Single</label>
+									
+									<input type="radio" id="married" name="marital" value="married">
+									<label for="married">Married</label>
+									
+									<input type="radio" id="widowed" name="marital" value="widowed">
+									<label for="widowed">Widowed</label>
+									
+									<input type="radio" id="complicated" name="marital" value="complicated">
+									<label for="complicated">It's complicated.</label>
+									
+								</td>
+							</tr> 
+
+
+
+							<tr>
+								<td>What's your favorite planet?</td>
+								<td>
+									<select name="planet" id="planet">
+										<option value="earth">Earth</option>
+										<option value="jupiter">Jupiter</option>
+										<option value="mars">Mars</option>
+										<option value="saturn">Saturn</option>
+										<option value="uranus">Uranus</option>
+										<option value="neptune">Neptune</option>
+										<option value="venus">Venus</option>
+										<option value="mercury">Mercury</option>
+									</select>
+								</td>	
+							</tr>
+
+							<tr>
+								<td>Anything else you would like to share?</td>
+								<td><textarea rows="4" cols="50">We would love to hear from you!</textarea></td>
+							</tr>	
+
+							<tr>
+								<td colspan="2">
+									<input type="submit" value="Submit">
+									<input type="reset" value="Reset">							
+									
+								</td>
+							</tr>
+
+
+							
+						</table>
+						</fieldset>
+
+						</form>
+
+
+					</div>
+					<footer>
+						<a href= "sh_home.html">Home</a> | 
+						<a href= "sh_floorplans.html">Floor Plans</a> | 
+						<a href= "sh_amenities.html">Amenities</a> | 
+						<a href= "sh_gallery.html">Gallery</a> | 
+						<a href= "sh_contact.html">Contact</a>
+					</footer>
+			</div>
+
+			<!--The bottom of the body element.-->
+
+
+
+
+
+
+
+
+
+		</body>
